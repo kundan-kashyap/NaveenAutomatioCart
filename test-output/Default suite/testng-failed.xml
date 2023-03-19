@@ -3,12 +3,42 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.VerifyHeader">
+      <class name="TestCases.Verifycart">
         <methods>
-          <include name="Header"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="cart"/>
           <include name="openUrl"/>
         </methods>
-      </class> <!-- TestCases.VerifyHeader -->
+      </class> <!-- TestCases.Verifycart -->
+      <class name="TestCases.VerifyRegisterAndLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="openUrl"/>
+          <include name="registerAndLogin"/>
+        </methods>
+      </class> <!-- TestCases.VerifyRegisterAndLogin -->
+      <class name="TestCases.VerifyFooter">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="openUrl"/>
+          <include name="footer"/>
+        </methods>
+      </class> <!-- TestCases.VerifyFooter -->
+      <class name="TestCases.VerifyMenubar">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="openUrl"/>
+          <include name="MenuBar"/>
+        </methods>
+      </class> <!-- TestCases.VerifyMenubar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

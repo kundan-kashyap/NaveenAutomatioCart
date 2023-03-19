@@ -2,13 +2,12 @@ package Resource;
 
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 
 public class CommmonMethods {
-	public static WebDriver driver;
+
 	public static void forloop(List<WebElement> Elements, String y) {
 		
 		for(WebElement z:Elements) {

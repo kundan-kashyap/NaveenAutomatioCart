@@ -1,63 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-05T14:40:58 IST" name="Suite" finished-at="2023-03-05T14:42:35 IST" duration-ms="96706">
+  <suite started-at="2023-03-19T13:06:59 IST" name="Suite" finished-at="2023-03-19T13:08:27 IST" duration-ms="87609">
     <groups>
     </groups>
-    <test started-at="2023-03-05T14:40:58 IST" name="Test" finished-at="2023-03-05T14:42:35 IST" duration-ms="96706">
+    <test started-at="2023-03-19T13:06:59 IST" name="Test" finished-at="2023-03-19T13:08:27 IST" duration-ms="87609">
       <class name="TestCases.VerifyHeader">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyHeader@243c4f91]" started-at="2023-03-05T14:40:58 IST" name="openUrl" finished-at="2023-03-05T14:41:10 IST" duration-ms="12454" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestCases.VerifyHeader@9f116cc]" started-at="2023-03-19T13:06:59 IST" name="beforeSuite" finished-at="2023-03-19T13:06:59 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyHeader@9f116cc]" started-at="2023-03-19T13:06:59 IST" name="openUrl" finished-at="2023-03-19T13:07:10 IST" duration-ms="10178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="Header()[pri:0, instance:TestCases.VerifyHeader@243c4f91]" started-at="2023-03-05T14:41:10 IST" name="Header" finished-at="2023-03-05T14:41:50 IST" duration-ms="39288" status="PASS">
+        <test-method signature="Header()[pri:0, instance:TestCases.VerifyHeader@9f116cc]" started-at="2023-03-19T13:07:10 IST" name="Header" finished-at="2023-03-19T13:07:12 IST" duration-ms="2486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Header -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyHeader@243c4f91]" started-at="2023-03-05T14:41:50 IST" name="close" finished-at="2023-03-05T14:41:50 IST" duration-ms="514" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyHeader@9f116cc]" started-at="2023-03-19T13:07:12 IST" name="close" finished-at="2023-03-19T13:07:13 IST" duration-ms="953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:TestCases.VerifyHeader@9f116cc]" started-at="2023-03-19T13:08:27 IST" name="afterSuite" finished-at="2023-03-19T13:08:28 IST" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- TestCases.VerifyHeader -->
-      <class name="TestCases.Verifycart">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.Verifycart@44ebcd03]" started-at="2023-03-05T14:42:20 IST" name="openUrl" finished-at="2023-03-05T14:42:27 IST" duration-ms="7429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="cart()[pri:0, instance:TestCases.Verifycart@44ebcd03]" started-at="2023-03-05T14:42:27 IST" name="cart" finished-at="2023-03-05T14:42:34 IST" duration-ms="6789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cart -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.Verifycart@44ebcd03]" started-at="2023-03-05T14:42:34 IST" name="close" finished-at="2023-03-05T14:42:35 IST" duration-ms="449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- TestCases.Verifycart -->
       <class name="TestCases.VerifyMenubar">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyMenubar@5af3afd9]" started-at="2023-03-05T14:41:50 IST" name="openUrl" finished-at="2023-03-05T14:42:01 IST" duration-ms="11212" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyMenubar@2a798d51]" started-at="2023-03-19T13:07:13 IST" name="openUrl" finished-at="2023-03-19T13:07:21 IST" duration-ms="7988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="MenuBar()[pri:0, instance:TestCases.VerifyMenubar@5af3afd9]" started-at="2023-03-05T14:42:01 IST" name="MenuBar" finished-at="2023-03-05T14:42:06 IST" duration-ms="4197" status="PASS">
+        <test-method signature="MenuBar()[pri:0, instance:TestCases.VerifyMenubar@2a798d51]" started-at="2023-03-19T13:07:21 IST" name="MenuBar" finished-at="2023-03-19T13:07:25 IST" duration-ms="4423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MenuBar -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyMenubar@5af3afd9]" started-at="2023-03-05T14:42:06 IST" name="close" finished-at="2023-03-05T14:42:06 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyMenubar@2a798d51]" started-at="2023-03-19T13:07:25 IST" name="close" finished-at="2023-03-19T13:07:26 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- TestCases.VerifyMenubar -->
-      <class name="TestCases.VerifyFooter">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyFooter@323b36e0]" started-at="2023-03-05T14:42:06 IST" name="openUrl" finished-at="2023-03-05T14:42:14 IST" duration-ms="7897" status="PASS">
+      <class name="TestCases.Verifycart">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.Verifycart@52bf72b5]" started-at="2023-03-19T13:07:51 IST" name="openUrl" finished-at="2023-03-19T13:08:02 IST" duration-ms="11637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="footer()[pri:0, instance:TestCases.VerifyFooter@323b36e0]" started-at="2023-03-05T14:42:14 IST" name="footer" finished-at="2023-03-05T14:42:20 IST" duration-ms="5476" status="PASS">
+        <test-method signature="cart()[pri:0, instance:TestCases.Verifycart@52bf72b5]" started-at="2023-03-19T13:08:02 IST" name="cart" finished-at="2023-03-19T13:08:12 IST" duration-ms="10254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.Verifycart@52bf72b5]" started-at="2023-03-19T13:08:12 IST" name="close" finished-at="2023-03-19T13:08:13 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCases.Verifycart -->
+      <class name="TestCases.VerifyRegisterAndLogin">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyRegisterAndLogin@37afeb11]" started-at="2023-03-19T13:08:13 IST" name="openUrl" finished-at="2023-03-19T13:08:21 IST" duration-ms="7655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="registerAndLogin()[pri:0, instance:TestCases.VerifyRegisterAndLogin@37afeb11]" started-at="2023-03-19T13:08:21 IST" name="registerAndLogin" finished-at="2023-03-19T13:08:26 IST" duration-ms="5664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLogin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyRegisterAndLogin@37afeb11]" started-at="2023-03-19T13:08:26 IST" name="close" finished-at="2023-03-19T13:08:27 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCases.VerifyRegisterAndLogin -->
+      <class name="TestCases.VerifyFooter">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:TestCases.VerifyFooter@6d763516]" started-at="2023-03-19T13:07:26 IST" name="openUrl" finished-at="2023-03-19T13:07:33 IST" duration-ms="7304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="footer()[pri:0, instance:TestCases.VerifyFooter@6d763516]" started-at="2023-03-19T13:07:33 IST" name="footer" finished-at="2023-03-19T13:07:50 IST" duration-ms="16983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footer -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyFooter@323b36e0]" started-at="2023-03-05T14:42:20 IST" name="close" finished-at="2023-03-05T14:42:20 IST" duration-ms="431" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.VerifyFooter@6d763516]" started-at="2023-03-19T13:07:50 IST" name="close" finished-at="2023-03-19T13:07:51 IST" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

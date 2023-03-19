@@ -7,29 +7,27 @@ import org.testng.annotations.Test;
 
 import ObjectModel.MenubarObjModel;
 import Resource.BaseClass;
-import Resource.CommmonMethods;
+
 
 public class VerifyMenubar extends BaseClass{
 	
 	@Test
 	public void MenuBar() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		MenubarObjModel mom=new MenubarObjModel(driver);
-		driver.manage().window().maximize();
 		
+		MenubarObjModel mom=new MenubarObjModel(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 Actions a=new Actions(driver);
-
-a.moveToElement(mom.hoverdesktop()).perform();
-mom.seeall().click();
-
-a.moveToElement(mom.cllaptop()).perform();
-a.moveToElement(mom.clcomp()).perform();
-a.moveToElement(mom.tab()).perform();
-a.moveToElement(mom.software()).perform();
-a.moveToElement(mom.cam()).perform();
-a.moveToElement(mom.player()).perform();
-a.moveToElement(mom.pho()).perform();
-
-
+//Desktop
+    a.moveToElement(mom.mouseondesktop()).perform();
+    mom.clkonshow().click();
+//Laptop
+    a.moveToElement(mom.clklaptop()).perform();
+    mom.clkshowlappy().click();
+//Component    
+   a.moveToElement(mom.clkcomponent()).perform();
+   mom.clkshowallcomponent().click();
+//MP3
+   a.moveToElement(mom.clkonmp3()).perform();
+   mom.clkshowallmp3().click();	
 	}
 }
