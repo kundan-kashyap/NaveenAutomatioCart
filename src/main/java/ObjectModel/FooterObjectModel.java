@@ -24,7 +24,7 @@ public class FooterObjectModel {
 	private By affiliate=By.linkText("Affiliate");
 	private By specials=By.linkText("Specials");
 //My Account
-	private By news=By.linkText("Newsletter");
+	private By news=By.linkText("Newsletter"); 
 	private By order=By.linkText("Order History");
 	
 	public FooterObjectModel(WebDriver driver2) {

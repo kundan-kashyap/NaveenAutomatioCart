@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="com.listeners.ListenerClass"></listener>
+<listener class-name="listeners.ListenerClass"></listener>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCases.VerifyHeader"/>
-      <class name="TestCases.VerifyMenubar"/>
+    <class name="TestCases.VerifyHeader"/>
       <class name="TestCases.VerifyFooter"/>
-      <class name="TestCases.Verifycart"/>
-      <class name="TestCases.VerifyRegisterAndLogin"/>
+      <class name="TestCases.VerifyMenubar"/>
+      <class name="TestCases.Verifycart"/>  
+     <class name="TestCases.VerifyRegisterAndLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

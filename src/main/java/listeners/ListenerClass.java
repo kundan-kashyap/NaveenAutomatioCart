@@ -1,11 +1,14 @@
-package com.listeners;
+package listeners;
 
+
+import java.io.IOException;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.aventstack.extentreports.Status;
-import com.extentManager.ExtentManager;
+
 import Resource.BaseClass;
+import extentManager.ExtentManager;
 public class ListenerClass extends ExtentManager implements ITestListener{
 	
 	 public void onTestStart(ITestResult result) {
@@ -21,17 +24,16 @@ public void onTestFailure(ITestResult result) {
 
 		   test.log(Status.FAIL, "Test CASE Failed is " + result.getName()); //To add name in extent report
 
-		   test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); //To throw excpetion
-
-		   String screenshotPath = "";	
+		   test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); //To throw excpetion	
 		
-				try {
-					screenshotPath = BaseClass.getScreenshot(BaseClass.driver, result.getName());
-				} catch (Exception e) {
-					test.addScreenCaptureFromPath(screenshotPath);
-					e.printStackTrace();
-				}
-}
+		  String screenshotPath="";
+		try {
+		screenshotPath = BaseClass.getScreenshot(BaseClass.driver, result.getName());
+		test.addScreenCaptureFromPath(screenshotPath);
+		} catch (IOException e) {	
+			e.printStackTrace();
+			}	
+	}
 	}
 public void onTestSkipped(ITestResult result) {
 if (result.getStatus() == ITestResult.SKIP) {

@@ -18,7 +18,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import com.extentManager.ExtentManager;
+
+import extentManager.ExtentManager;
 
 public class BaseClass {
 	
@@ -63,10 +64,10 @@ public class BaseClass {
 	public void afterSuite() {
 		ExtentManager.endReport();
 	}
-	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
+	 public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
 
-		 String dateFormat = new SimpleDateFormat("yyyy.MM.dd.hh:mm:ss").format(new Date());
-		  
+		  String dateFormat = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+
 		  TakesScreenshot ts = (TakesScreenshot) driver;
 
 		  File source = ts.getScreenshotAs(OutputType.FILE);
@@ -74,12 +75,8 @@ public class BaseClass {
 		  String destination = System.getProperty("user.dir") + "/Screenshots/" + screenshotName + dateFormat + ".png";
 
 		  File finalDestination = new File(destination);
-		  try {
-		  FileUtils.copyFile(source, finalDestination);
-		  }catch(Exception e) {
-			  e.getMessage();
-		  }
-		 return destination;
+				  FileUtils.copyFile(source, finalDestination);
+				 return destination;
 }
 	
 }

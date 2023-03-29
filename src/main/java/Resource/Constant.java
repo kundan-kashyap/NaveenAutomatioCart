@@ -9,6 +9,7 @@ public class Constant {
 	public static String telephone="1234567890";
 	public static String pass="Test@1234";
 	public static String reenterpass="Test@1234";
-	
+	public static String checkmail="kiop@gmail.com";
+	public static String checkpass="Tester@1234";
 
 }

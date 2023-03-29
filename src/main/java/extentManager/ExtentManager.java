@@ -1,4 +1,4 @@
-package com.extentManager;
+package extentManager;
 
 import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.ExtentReports;
@@ -19,7 +19,7 @@ public class ExtentManager {
 		 
 		 public static void setup() {
 		 
-		  htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/TestReport.html");
+		  htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/myReport.html");
 		  htmlReporter.config().setDocumentTitle("Automation Report"); //Tiltle of the report
 		  htmlReporter.config().setReportName("Functional Report"); //Nameof the report
 		  htmlReporter.config().setTheme(Theme.DARK); //theme of the report
